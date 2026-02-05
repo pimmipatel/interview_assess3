@@ -28,9 +28,7 @@ export default function Login() {
     try {
       await dispatch(loginUser({ username, password })).unwrap();
       navigate('/');
-    } catch (err) {
-      // handled in slice
-    }
+    } catch (err) {}
   };
 
   return (
